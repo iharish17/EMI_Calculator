@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome Maths Lovers!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-image: linear-gradient(135deg, #7f7fd5 0%, #91eae4 100%);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
+    .welcome-banner {
+      width: 100%;
+      text-align: center;
+      margin: 0 auto 40px auto;
+      padding-top: 42px;
+      padding-bottom: 14px;
+    }
+    .welcome-title {
+      color: #ffd700;
+      font-size: 2.6rem;
+      font-weight: 900;
+      letter-spacing: 0.018em;
+      text-shadow: 0 2px 18px rgba(60,60,60, 0.13);
+      margin-bottom: 13px;
+    }
+    .welcome-description {
+      color: #e8ecf7;
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+.link-buttons-row {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-top: 11px;
+}
+.link-button {
+  text-decoration: none;
+  background: #ffd600;
+  color: #2c2f36;
+  padding: 19px 33px;
+  font-size: 1.27rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(80,80,150,0.15);
+  cursor: pointer;
+  transition: filter 0.12s, transform 0.13s;
+  margin-bottom: 14px;
+}
+.link-button:hover {
+  filter: brightness(0.94);
+  transform: translateY(-2px) scale(1.04);
+}
+    @media (max-width: 1100px) {
+      .welcome-title { font-size: 2.2rem; }
+      .welcome-description { font-size: 1.1rem;}
+      .link-buttons-row { gap: 19px;}
+      .link-button { font-size: 1.15rem; padding: 17px 24px; }
+    }
+    @media (max-width: 650px) {
+      .welcome-banner { margin-bottom: 12px; padding-top: 28px;}
+      .welcome-title { font-size: 1.15rem; }
+      .welcome-description { font-size: 0.91rem;}
+      .link-buttons-row { gap: 10px;}
+      .link-button { font-size: 1rem; padding: 11px 8vw;}
+    }
+ .btn-calc {
+  background: #ffe600;
+  color: #222;
+  border: none;
+  border-radius: 18px; /* Slightly more rounded */
+  font-size: 1.28rem; /* Slightly bigger font */
+  font-weight: 700;
+  padding: 18px 44px;
+  margin: 16px 0;
+  cursor: pointer;
+  transition: background 0.25s, color 0.25s, transform 0.2s;
+  width: auto;
+  min-width: 160px; /* For consistent size */
+  display: inline-block;
+}
+
+.btn-calc:hover {
+  background: #fff23f;
+  color: #0077ff;
+  transform: scale(1.05);
+}
+
+.emi-card {
+  background: transparent; /* Semi-transparent white */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  border-radius: 24px; /* Larger rounding */
+  max-width: 760px;
+  width: 90%;
+  text-align: center;
+  padding: 28px 44px 36px;
+  margin-top: 36px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  color: #ffd600;
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 32px;
+  margin-top: 8px;
+  text-shadow: 0 2px 20px rgba(60, 60, 60, 0.12);
+  letter-spacing: 0.028em;
+}
+
+.emi-label {
+  padding: 12px 18px;
+  font-size: 1.023rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 90px;
+  margin-right: 12px;
+  color: #0e0f0fff;
+  font-weight: 600;
+}
+
+.emi-input[type="number"] {
+  padding: 10px 16px;
+  margin-bottom: 10px;
+  font-size: 1.023rem;
+  border: 1px solid #bac9ed;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 100px;
+  background: #f4faff;
+  color: #282828;
+  font-weight: 600;
+}
+.emi-btn {
+  margin-top: 38px;
+  padding: 20px 0;
+  width: 100%;
+  max-width: 460px;
+  background: #ffd600;
+  border: none;
+  border-radius: 16px;
+  color: #0e0f0fff;
+  font-weight: 800;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.emi-results {
+  margin-top: 20px;
+  font-size: 1.023rem;
+  color: #0e0f0fff;
+  font-weight: 600;
+  line-height: 1.3;
+}
+@media (max-width: 600px) {
+  .emi-card {
+    padding: 24px 18px 28px;
+    width: 95%;
+  }
+
+  .emi-btn {
+    width: 100%;
+    min-width: unset;
+    margin: 12px 0;
+  }
+
+  .emi-label,
+  .emi-input[type="number"] {
+    width: 100px;
+    padding: 8px 10px;
+    font-size: 1.0rem;
+  }
+  </style>
+</head>
+<body>
+  <div class="welcome-banner">
+    <div class="welcome-title">Welcome Maths Lovers!</div>
+    <div class="welcome-description">
+      Explore your passion for mathematics with our carefully curated tools and resources. Click a button below to jump to the tool you want to use.
+    </div>
+    <div class="link-buttons-row">
+      <a href="https://solve-equation.vercel.app/" class="link-button" target="_self" rel="noopener noreferrer">Quadratic Equation Solver</a>
+      <a href="https://solve-equation.vercel.app/" class="link-button" target="_self" rel="noopener noreferrer">Equation Solver</a>
+      <a href="https://mean-mode-median.vercel.app" class="link-button" target="_self" rel="noopener noreferrer">Mean, Mode and Median</a>
+      <a href="https://number-system-ten.vercel.app" class="link-button" target="_self" rel="noopener noreferrer">Number System</a>
+      <a href="#" class="link-button" target="_self" rel="noopener noreferrer">BMI Calculator</a>
+    </div>
+  </div> 
+  
+  <div class="emi-card">
+    <h2>EMI Calculator</h2>
+      <form id="emiForm" autocomplete="off" onsubmit="event.preventDefault(); calculateEMI();">
+        <div class="emi-input-row">
+          <label class="emi-label" for="amount">Loan Amount (₹):</label>
+          <input class="emi-input" type="number" id="amount" min="1000" step="100" required placeholder="e.g., 500000">
+        </div>
+        <div class="emi-input-row">
+          <label class="emi-label" for="rate">Annual Interest (%):</label>
+          <input class="emi-input" type="number" id="rate" min="0.01" step="0.01" required placeholder="e.g., 8.5">
+        </div>
+        <div class="emi-input-row">
+          <label class="emi-label" for="tenure">Tenure (Years):</label>
+          <input class="emi-input" type="number" id="tenure" min="1" step="1" required placeholder="e.g., 5">
+        </div>
+        <button class="emi-btn" onclick="calculateBMI" type="submit">Calculate EMI</button>
+      </form>
+      <div class="emi-results" id="emiResults">
+        <p id="emiOut"></p>
+        <p id="totalOut"></p>
+        <p id="interestOut"></p>
+      </div>
+    </div> </div>
+  <script>
+    function calculateEMI() {
+      const amount = parseFloat(document.getElementById('amount').value);
+      const rate = parseFloat(document.getElementById('rate').value);
+      const tenureYears = parseInt(document.getElementById('tenure').value);
+
+      if (isNaN(amount) || isNaN(rate) || isNaN(tenureYears) || amount <= 0 || rate <= 0 || tenureYears <= 0) {
+        alert('Please enter valid values.');
+        return;
+      }
+      const principal = amount;
+      const annualInterest = rate;
+      const months = tenureYears * 12;
+      const monthlyRate = annualInterest / 12 / 100;
+      const emi = principal * monthlyRate * Math.pow(1 + monthlyRate, months) / (Math.pow(1 + monthlyRate, months) - 1);
+      const totalPayment = emi * months;
+      const totalInterest = totalPayment - principal;
+
+      document.getElementById('emiOut').textContent = "Monthly EMI: ₹ " + emi.toLocaleString(undefined, {maximumFractionDigits:2});
+      document.getElementById('totalOut').textContent = "Total Payment: ₹ " + totalPayment.toLocaleString(undefined, {maximumFractionDigits:2});
+      document.getElementById('interestOut').textContent = "Total Interest: ₹ " + totalInterest.toLocaleString(undefined, {maximumFractionDigits:2});
+      document.getElementById('emiResults').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
