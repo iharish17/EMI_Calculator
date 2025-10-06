@@ -71,27 +71,6 @@
       .link-buttons-row { gap: 10px;}
       .link-button { font-size: 1rem; padding: 11px 8vw;}
     }
- .btn-calc {
-  background: #ffe600;
-  color: #222;
-  border: none;
-  border-radius: 18px; /* Slightly more rounded */
-  font-size: 1.28rem; /* Slightly bigger font */
-  font-weight: 700;
-  padding: 18px 44px;
-  margin: 16px 0;
-  cursor: pointer;
-  transition: background 0.25s, color 0.25s, transform 0.2s;
-  width: auto;
-  min-width: 160px; /* For consistent size */
-  display: inline-block;
-}
-
-.btn-calc:hover {
-  background: #fff23f;
-  color: #0077ff;
-  transform: scale(1.05);
-}
 
 .emi-card {
   background: transparent; /* Semi-transparent white */
