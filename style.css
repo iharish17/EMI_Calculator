@@ -51,7 +51,7 @@
   box-shadow: 0 8px 24px rgba(80,80,150,0.15);
   cursor: pointer;
   transition: filter 0.12s, transform 0.13s;
-  margin-bottom: 5px;
+  margin-bottom: 14px;
 }
 .link-button:hover {
   color:#0077ff;
